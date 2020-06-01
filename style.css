@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(0, 3%, 70%);
+}
+.primary div{
+  margin: 20px;
+}
+.primary, .button{
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.one{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: hsl(0, 3%, 70%);
+  box-shadow: -4px -4px 7px hsl(0, 3%, 80%), 5px 5px 9px hsl(0, 3%, 60%);
+}
+.two{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: hsl(0, 3%, 70%);
+  box-shadow: inset -4px -4px 7px hsl(0, 3%, 80%), inset 5px 5px 9px hsl(0, 3%, 60%);
+}
+.three{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: hsl(0, 3%, 70%);
+  box-shadow: -4px -4px 7px hsl(0, 3%, 80%), 5px 5px 9px hsl(0, 3%, 60%);
+  position: relative;
+}
+.three::after{
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  background-color: hsl(0, 3%, 70%);
+  box-shadow: inset -4px -4px 7px hsl(0, 3%, 80%), inset 5px 5px 9px hsl(0, 3%, 60%);
+}
+button{
+  width: 200px;
+  height: 40px;
+  background-color:  hsl(0, 3%, 70%);
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  border-radius: 20px;
+  box-shadow: inset -3px -3px 8px hsl(0, 3%, 50%), inset 3px 3px 10px hsl(0, 3%, 90%);
+}
+button:hover{
+  letter-spacing: 2px;
+  box-shadow: inset -3px -3px 8px hsl(0, 3%, 90%), inset 3px 3px 10px hsl(0, 3%, 50%);
+}
